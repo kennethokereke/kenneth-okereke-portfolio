@@ -1,0 +1,169 @@
+
+
+#navbar #navBackground {
+        width: 446px;
+        transition: 0.3s width ease-in-out, 0.4s background-color;
+        height: 100vh;
+        background-color: #f8f8f8;
+
+    }
+
+    #navbar #titles {
+        opacity: 1;
+        transition: 0.4s opacity ease-in-out;
+        top: calc(50% - 182px - 28px);
+        position: fixed;
+        left: 32px;
+    }
+        #navbar #titles h2 {
+           font-weight: 500;
+           color: #5a5a5a;
+           padding: 12px 0;
+           font-size: 37.2px;
+        }
+
+       #navbar #titles h3 {
+           color: #939393;
+           padding: 0;
+           font-weight: 400;
+        }
+
+        h3 {
+           font-family: sans-serif;
+           font-size: 25.6px;
+           margin: 0;
+           line-height: 1.802;
+        }
+
+        h1,h2 {
+           font-family: sans-serif;
+           margin: 0;
+           line-height: 1.802;
+        }
+
+
+
+     
+     #navbar #linkWrapper {
+        top: calc(50% + 8px);
+        transition: 0.35s top ease-in-out;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        left: 32px;
+     }
+       #navbar #linkWrapper a {
+           color: #939393;
+           padding: 4px 8px 3px 8px;
+           transition: 0.35s all;
+           border: 1px solid #00000000;
+           margin-bottom: 16px;
+        }
+
+         
+
+           a{
+              font-family: sans-serif;
+              text-decoration: none;
+           }
+
+           #navbar #linkWrapper .active,
+           #navbar #linkWrapper .active:hover {
+              color: #ffffff;
+              font-weight: 600;
+              background-color: #6f73ff;
+           }
+      
+     
+     #navbar #logoWrapper {
+        position: fixed;
+        bottom: 24px;
+        left: 24px;
+     }
+        #navbar #logoWrapper #logo {
+           background-color: red;
+           background-size: contain;
+           background-repeat: no-repeat;
+           background-position: 50%;
+           height: 50px;
+           width: 50px;
+           display: inline-block;
+           filter: grayscale(0.8);
+           transition: all 0.4s;
+        }
+       #navbar #logoWrapper #logo:hover {
+           filter: grayscale(0.3);
+        }
+     
+     #navar .smallNav  #navBackground {
+           width: 146px;
+        }
+      #navbar  #titles .smallNav {
+           opacity: 0;
+        }
+       #navbar #linkWrapper .smallNav {
+          top: calc(50% + 8px - 65px);
+        }
+     
+    #navbar .darkNav #navBackground {
+        background-color: #131313;
+       }
+      #navbar #linkWrapper a:hover {
+           background-color: rgba(255,255,255,0.1);
+           color: white;
+        }
+      
+      #navbar #logoWrapper  #logo {
+           filter: grayscale(1) brightness(3);
+           transition: 0.3s filter;
+        }
+      #nabvar #logoWrapper #logo:hover {
+           filter: grayscale(1) brightness(9);
+        }
+       
+        a,p {
+           line-height: 1.802;
+        }
+     
+  
+  
+  
+  
+  @media screen and (max-width: 500px) {
+     #navbar #navBackground {
+           height:80px;
+           width: 100%;
+           background-color: #f8f8f8;
+        }
+       #navbar  #linkWrapper {
+           flex-direction: row;
+           left: calc(50%);
+           transform: translateX(-50%);
+           top: 21px;
+         
+        }
+
+        #navbar #linkWrapper a:nth-child(2) {
+         margin: 0 8px;
+      }
+
+        #navbar #linkWrapper a {
+         margin: 0;
+      }
+        #navbar #titles {
+           display: none;
+        }
+       #navbar #logoWrapper {
+           display: none;
+        }
+
+
+        #navbar .smallNav #navBackground {
+              width: 100%;
+           }
+           #navbar .smallNav  #linkWrapper {
+             top: 21px;
+           }
+        }
+     
+  

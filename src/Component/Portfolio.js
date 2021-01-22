@@ -4,47 +4,55 @@ import Card from './Card'
 import FilterBar from './FilterBar'
 import {ReactComponent as Heart} from '../Images/portfolio/heart.svg'
 import {ReactComponent as ReactIcon} from '../Images/portfolio/React-icon.svg'
+import Johnson from '../Images/JohnsonJohnson/johnson-johnson.svg'
+import Lululemon from '../Images/lululemon/lululemon-logo.svg'
+import Aetna from '../Images/Aetna/aetna-logo.svg'
+import Sweepr from '../Images/Sweeper/sweepr-logo.png'
+import Snapchat from '../Images/Snapchat/snapchat-logo-.svg'
 
 const projects = [
    {
-      id: "Johnson & Johnson",
+      id: "johnson",
       title: 'Johnson & Johnson',
       description: "My work as a UI/UX Design Intern",
-      color: "#00abcc",
+      color: "#a30303",
       type: "Work",
-    //   logo: squidLogo
+     logo: Johnson
    },
    {
-      id: "Lululemon",
+      id: "lululemon",
       title: 'Lululemon',
       description: "My work as a UX Designer & Mobile Developer",
-      color: "#0081F8",
+      color: "#d41515",
       type: "Work",
-    //   logo: ebayLogo
+      logo: Lululemon
+
    },
    {
-      id: "Aetna",
+      id: "aetna",
       title: 'Aetna',
       description: "My work as a UX design intern",
       color: "#0A2F3C",
       type: "Work",
-    //   logo: uberLogo
+      logo: Aetna
+  
    },
    {
-      id: "Sweeper",
-      title: 'Sweeper',
+      id: "sweepr",
+      title: 'Sweepr',
       description: "My work as a UI/UX Designer ",
       color: "#FF9445",
       type: "Work",
-    //   logo: jupyterLogo
+      logo: Sweepr
+    
    },
    {
-      id: "Snachat Case Study",
-      title: '"Snachat Case Study',
+      id: "snapchat",
+      title: 'Snaphat Case Study',
       description: "Design and Programmed the application",
       color: "#EE5691",
       type: "Project",
-    //   logo: dribbbleLogo,
+      logo: Snapchat,
     //   link: "https://dribbble.com/spoorthyv"
    }
 ];

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 class Card extends React.Component {
    render(props) {
-      const { id, color, type, title, description, link } = this.props.project;
+      const { id, color, type, title, logo, description, link } = this.props.project;
       return (
          <Link
             className="card"
@@ -15,7 +15,7 @@ class Card extends React.Component {
          >
             <p className={`label ${type}`}>{type}</p>
             <div className="imageWrapper">
-               {/* <img className="cardImage" src={logo} /> */}
+               <img className="cardImage" src={logo} />
             </div>
             <div className="textWrapper">
                <h4>{title}</h4>

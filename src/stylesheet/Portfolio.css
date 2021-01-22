@@ -101,6 +101,40 @@
                   max-height: 100px;
                   align-self: center;
                }
+      
+               #portfolio #portfolioBody #cardGrid #johnson .imageWrapper img, 
+               #portfolio #portfolioBody #cardGrid #lululemon .imageWrapper img {
+                  max-width: 141px;
+              }
+
+              #portfolio #portfolioBody #cardGrid .card .imageWrapper img {
+               max-width: 100px;
+               max-height: 100px;
+               align-self: center;
+           }
+
+           #sweepr .cardImage {
+              width: 100%;
+              
+           }
+
+       
+
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
                #portfolio #portfolioBody #cardGrid .card .textWrapper {
                display: block;
@@ -160,39 +194,6 @@
          
         
          
-         #johnsonjohnson  
-         #portfolio #portfolioBody 
-         #cardGrid .imageWrapper img {
-                  max-width: 158px;
-               }
-            
-         
-         #aetna  #portfolio #portfolioBody
-          #cardGrid .imageWrapper  img {
-                  max-width: 158px;
-               }
-            
-         
-         #lululemon #portfolio #portfolioBody
-         #cardGrid .imageWrapper  img {
-                  max-height: 120px;
-                  max-width: 120px;
-               }
-            
-         
-         #sweeper #portfolio #portfolioBody
-         #cardGrid .imageWrapper  img {
-           
-                  max-height: 120px;
-                  width: 120px;
-               }
-            
-         
-         #snapchat #portfolio #portfolioBody
-         #cardGrid .imageWrapper  img  {
-            
-                  max-height: 128px;
-               }
             
          
          /* #dribbble {

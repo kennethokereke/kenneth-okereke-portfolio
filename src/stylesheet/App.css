@@ -92,18 +92,19 @@
   border-radius: 20px;
 }
 
-@media screen and (max-width: 582px)  {
-  #wrapper {
-     top: 80px;
-     width: 100%;
-     left: 0;
-     height: calc(100% - 80px);
-  }
+@media screen and (max-width: 922px)  {
+   #wrapper, #wrapper.smallNav {
+      width: 100%;
+      left: 0;
+   }
 
-  #wrapper.smallNav {
-     left: 0;
-     width: 100%;
-  }
+   #wrapper {
+      top:80px;
+      height: calc(100% - 80px);
+   }
+ 
+
+
 
   .horizGallery  > div img {
            height: 300px;

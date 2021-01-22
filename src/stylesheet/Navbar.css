@@ -10,8 +10,8 @@
 
     #navbar #titles {
         opacity: 1;
-        transition: 0.4s opacity ease-in-out;
-        top: calc(50% - 182px - 28px);
+        transition: 4s opacity ease-in-out;
+        top: calc(50% - 210px);
         position: fixed;
         left: 32px;
     }
@@ -28,25 +28,14 @@
            font-weight: 400;
         }
 
-        h3 {
-           font-family: sans-serif;
-           font-size: 25.6px;
-           margin: 0;
-           line-height: 1.802;
-        }
-
-        h1,h2 {
-           font-family: sans-serif;
-           margin: 0;
-           line-height: 1.802;
-        }
+       
 
 
 
      
      #navbar #linkWrapper {
         top: calc(50% + 8px);
-        transition: 0.35s top ease-in-out;
+        transition: top .35s  ease-in-out;
         position: fixed;
         display: flex;
         flex-direction: column;
@@ -54,22 +43,19 @@
      }
        #navbar #linkWrapper a {
            color: #939393;
-           padding: 4px 8px 3px 8px;
-           transition: 0.35s all;
-           border: 1px solid #00000000;
+           padding: 4px 8px 3px;
+           transition: all .35s;
+           border: 1px solid transparent;
            margin-bottom: 16px;
         }
 
          
 
-           a{
-              font-family: sans-serif;
-              text-decoration: none;
-           }
+         
 
            #navbar #linkWrapper .active,
            #navbar #linkWrapper .active:hover {
-              color: #ffffff;
+              color: #fff;
               font-weight: 600;
               background-color: #6f73ff;
            }
@@ -110,7 +96,7 @@
        }
       #navbar #linkWrapper a:hover {
            background-color: rgba(255,255,255,0.1);
-           color: white;
+           color: rgb(102, 102, 102);
         }
       
       #navbar #logoWrapper  #logo {
@@ -121,15 +107,12 @@
            filter: grayscale(1) brightness(9);
         }
        
-        a,p {
-           line-height: 1.802;
-        }
-     
+      
   
   
   
   
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 922px) {
      #navbar #navBackground {
            height:80px;
            width: 100%;
@@ -137,7 +120,7 @@
         }
        #navbar  #linkWrapper {
            flex-direction: row;
-           left: calc(50%);
+           left: 50%;
            transform: translateX(-50%);
            top: 21px;
          
@@ -150,15 +133,15 @@
         #navbar #linkWrapper a {
          margin: 0;
       }
-        #navbar #titles {
-           display: none;
-        }
-       #navbar #logoWrapper {
+        #navbar #logoWrapper, #navbar #titles  {
            display: none;
         }
 
+      
+      
 
-        #navbar .smallNav #navBackground {
+
+        #navbar  .smallNav #navBackground {
               width: 100%;
            }
            #navbar .smallNav  #linkWrapper {

@@ -4,7 +4,7 @@ import { Switch, Route, withRouter } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import SimpleReactLightbox from "simple-react-lightbox";
 
-import Portfolio from './Portfolio';
+
 import Resume from './Resume';
 
 import Portfolio from './Portfolio';

@@ -1,0 +1,323 @@
+/* @import "./variables"; */
+
+#portfolio #portfolioBody {
+      display: grid;
+      justify-content: center;
+      padding: 150px 100px 75px;
+      grid-gap: 8px;
+}
+
+#portfolio #portfolioBody #header {
+         padding: 0;
+         width: 100%;
+         font-weight: 400;
+         letter-spacing: -0.1px;
+      }
+
+      #portfolio #portfolioBody #filterBar {
+         display: flex;
+         margin-bottom: 28px;
+      }
+      #portfolio #portfolioBody #filterBar .filter {
+            font-family: sans-serif;
+            padding: 12px 20px;
+            line-height: 1;
+            border-radius: 52px;
+            margin-left: 12px;
+            background-color: #f7f7f7;
+           
+            transition: 0.3s all;
+            font-weight: 600;
+      }
+      #portfolio #portfolioBody #filterBar .filter:nth-child(1) {
+               margin-left: 0;
+            }
+
+
+            #portfolio #portfolioBody #filterBar .filter:hover {
+               cursor: pointer;
+            }
+            #portfolio #portfolioBody #filterBar :hover .filter:nth-child(1) {
+                color: #4676fd;
+                background-color: #eef3ff;
+               }
+               #portfolio #portfolioBody #filterBar :hover .filter:nth-child(2) {
+                color: #1ea96f;
+                background-color: #e8f9f0;
+               }
+               #portfolio #portfolioBody #filterBar :hover .filter:nth-child(3) {
+                color: #ef8739;
+                background-color: #fff3eb;
+               }
+            
+
+               #portfolio #portfolioBody #filterBar .filter :hover {
+               color: #fff;
+               }
+
+               #portfolio #portfolioBody #filterBar .filter.selected:nth-child(1) {
+                background-color: #4676fd;
+               }
+               #portfolio #portfolioBody #filterBar .filter.selected:nth-child(2) {
+                background-color: #20b376;
+               }
+               #portfolio #portfolioBody #filterBar .filter.selected:nth-child(3) {
+                background-color: #f78f40;
+               }
+               #portfolio #portfolioBody #filterBar .filter.selected:hover {
+                color: #fff;
+               }
+            
+       
+
+         #portfolio #portfolioBody #cardGrid {
+         display: grid;
+         grid-template-columns: repeat(3, 276px);
+         grid-auto-rows: 324px;
+         justify-content: center;
+         grid-gap: 36px;
+
+      }
+
+      #portfolio #portfolioBody #cardGrid  .card {
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            flex-direction: column;
+            border-radius: 5px;
+            box-shadow: 0 0 0 0 rgba(0,0,0,.14);
+            transition: box-shadow .3s, transform .3s;
+            cursor: pointer;
+            text-decoration: none;
+      }
+      #portfolio #portfolioBody #cardGrid .card .imageWrapper {
+               display: flex;
+               justify-content: center;
+               flex: 1;
+               padding: 60px 40px 40px;
+      }
+      #portfolio #portfolioBody #cardGrid .imageWrapper .card  img {
+                  max-width: 100px;
+                  max-height: 100px;
+                  align-self: center;
+               }
+            
+               #portfolio #portfolioBody #cardGrid .card .textWrapper {
+               display: block;
+               background-color: rgba(0,0,0,0.05);
+               padding: 14px 24px 16px;
+               }
+               #portfolio #portfolioBody #cardGrid .card .textWrapper h4 {
+                  padding: 0;
+                  color: white;
+               }
+               #portfolio #portfolioBody #cardGrid .card .textWrapper p {
+                  line-height: 20px;
+                  font-size: 14px;
+                  color: white;
+                  padding: 0;
+               }
+            
+
+
+
+               #portfolio  #portfolioBody  #cardGrid .card .label {
+               font-family: sans-serif;
+               font-weight: 600;
+               letter-spacing: .2px;
+               position: absolute;
+               right: 17px;
+               top: 15px;
+               background-color: #fff;
+               font-size: 12px;
+               border-radius: 2px;
+               opacity: 0;
+               transition: .4s all;
+               padding: 2px 8px 1px;
+               margin: 0;
+               z-index: 2;
+            }
+            #portfolio #portfolioBody #cardGrid .card  .Work {
+               color: #4676fd;
+            }
+            #portfolio #portfolioBody #cardGrid .card    .Project {
+               color: #20b376;
+            }
+            #portfolio #portfolioBody #cardGrid .card   .Other {
+               color: #f78f40;
+            }
+            #portfolio #portfolioBody #cardGrid  .card:hover {
+               transform: translateY(-7px);
+               box-shadow: 0px 7px 26px 0px rgba(0,0,0,.24);
+            }
+            #portfolio #portfolioBody #cardGrid  .card:hover .label {
+                  opacity: 1;
+               }
+            
+               #portfolio #portfolioBody #cardGrid   .card:active {
+               transform: translateY(-4px);
+            }
+         
+        
+         
+         #johnsonjohnson  
+         #portfolio #portfolioBody 
+         #cardGrid .imageWrapper img {
+                  max-width: 158px;
+               }
+            
+         
+         #aetna  #portfolio #portfolioBody
+          #cardGrid .imageWrapper  img {
+                  max-width: 158px;
+               }
+            
+         
+         #lululemon #portfolio #portfolioBody
+         #cardGrid .imageWrapper  img {
+                  max-height: 120px;
+                  max-width: 120px;
+               }
+            
+         
+         #sweeper #portfolio #portfolioBody
+         #cardGrid .imageWrapper  img {
+           
+                  max-height: 120px;
+                  width: 120px;
+               }
+            
+         
+         #snapchat #portfolio #portfolioBody
+         #cardGrid .imageWrapper  img  {
+            
+                  max-height: 128px;
+               }
+            
+         
+         /* #dribbble {
+            .imageWrapper {
+               img {
+                  max-height: 120px;
+                  max-width: 120px;
+               }
+            }
+         } */
+      
+   
+
+
+
+
+
+
+
+
+
+   #portfolio #footer  a {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 16px;
+         border-top: 2px solid #f8f8f8;
+   }
+   #portfolio #footer  a h4 {
+            transition: 0.3s color;
+            font-size: 15px;
+            line-height: 15px;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            color: #a5a5a5;
+            font-weight: 400;
+            white-space: nowrap;
+         }
+         #portfolio #footer  a svg {
+            transition: 0.3s fill;
+         }
+         #portfolio #footer  a #reactIcon {
+            width: 29px;
+            fill: #8ddcf1;
+            padding-bottom: 2px;
+         }
+         #portfolio #footer a #heartIcon {
+            width: 15px;
+            padding: 0 4px 1px 4px;
+            fill: #ef8e90;
+         }
+      
+         #portfolio #footer  a:hover h4 {
+          color: rgb(109, 109, 109);
+        }
+        #portfolio #footer  a #reactIcon {
+           fill: #3ccff7;
+        }
+        #portfolio #footer  a #heartIcon {
+           fill: #f55f62;
+        }
+      
+   
+
+
+@media screen and (max-width: 1546px) {
+   #portfolio  #portfolioBody  #cardGrid {
+            grid-template-columns: repeat(2, 276px);
+         }
+      
+   
+}
+
+@media screen and (max-width: 1234px) {
+   #portfolio  #portfolioBody   #header {
+            width: 276px;
+         }
+
+         #portfolio  #portfolioBody   #cardGrid {
+            grid-template-columns: repeat(1, max-content);
+         }
+      
+   
+}
+
+@media screen and (max-width: 922px) {
+   #portfolio #portfolioBody {
+         padding: 40px 0;
+         grid-gap: 24px;
+   }
+  
+   
+   #portfolio #portfolioBody   #filterBar {
+            display: none;
+         }
+         #portfolio #portfolioBody #header {
+            width: calc(100vw - 64px);
+         }
+         #portfolio #portfolioBody  #cardGrid {
+            grid-gap: 18px;
+         }
+         #portfolio #portfolioBody  #cardGrid  .card {
+               width: calc(100vw - 64px);
+            }
+         
+      
+      #footer  a {
+            padding: 12px;
+      }
+            
+      #footer  a   h4 {
+               font-size: 13px;
+      }
+      #footer  a   h4  #heartIcon {
+                  width: 13px;
+                  fill: #6F73FF;
+               }
+               #footer  a  h4  #reactIcon {
+                  width: 25px;
+                  fill: #61DAFB;
+               }
+            }
+         
+      
+   
+

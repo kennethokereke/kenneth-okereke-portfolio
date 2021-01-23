@@ -1,0 +1,72 @@
+
+
+.jupyter {
+  overflow-x: hidden;
+}
+.jupyter  .innerWrapper .section {
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .jupyter .section:nth-child(2n+1) {
+        background-color: #f8f8f8;
+      }
+
+      .jupyter .sectionContent {
+        padding: 52px 150px 68px 150px;
+        margin: auto;
+        max-width: 900px;
+      }
+      .jupyter h1 {
+        color: #f37727;
+        padding: 24px 0 16px 0;
+      }
+      .jupyter h2 {
+        line-height: 1.5;
+        color: #f37727;
+      }
+      .jupyter  h3 {
+        line-height: 2;
+      }
+      .jupyter p {
+        line-height: 26px;;
+      }
+      .jupyter  b {
+        font-weight: 500;
+      }
+      .jupyter  ol {
+        margin: 5px 0 0 0;
+        padding-left: 17px;
+      }
+      .jupyter li {
+        line-height: 1.5;
+      }
+      .jupyter object {
+        margin-top: 20px;
+      }
+
+      .jupyter .sectionContent  > img {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      #navbarImg {
+        background-color: #f3f3f3;
+        padding: 5px;
+        margin: 20px 0;
+        
+      }
+
+      #navbarImg  img {
+        width: 100%;
+      }
+
+      #jupyterLab {
+         padding-bottom: 20px;
+      }
+
+      .horizGallery  > div {
+            padding: 0 120px 68px 0;
+         }
+      
+  

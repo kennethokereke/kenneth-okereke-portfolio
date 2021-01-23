@@ -2,13 +2,15 @@ import React from 'react'
 import '../stylesheet/Portfolio.css';
 import Card from './Card'
 import FilterBar from './FilterBar'
-import {ReactComponent as Heart} from '../Images/portfolio/heart.svg'
-import {ReactComponent as ReactIcon} from '../Images/portfolio/React-icon.svg'
+import { ReactComponent as Heart } from '../Images/portfolio/heart.svg'
+import { ReactComponent as ReactIcon } from '../Images/portfolio/React-icon.svg'
 import Johnson from '../Images/JohnsonJohnson/johnson-johnson.svg'
 import Lululemon from '../Images/lululemon/lululemon-logo.svg'
 import Aetna from '../Images/Aetna/aetna-logo.svg'
 import Sweepr from '../Images/Sweeper/sweepr-logo.png'
 import Snapchat from '../Images/Snapchat/snapchat-logo-.svg'
+
+
 
 const projects = [
    {

@@ -9,7 +9,7 @@ import Resume from './Resume';
 
 import Portfolio from './Portfolio';
 
-import johnsonjohnson from './johnsonjohnson';
+import johnsonjohnson from './johnsonjohnsons';
 import lululemon from './lululemon';
 import sweeper from './sweeper';
 import aetna from './aetna';
@@ -46,7 +46,7 @@ class ContentWrapper extends React.Component {
                         <Switch location={this.props.location}>
                            <Route exact path="/" component={Portfolio} />
                            <Route path="/resume" component={Resume} />
-                           <Route path="/johnsonAndJohnson" component={johnsonjohnson} />
+                           <Route path="/johnson" component={johnsonjohnson} />
                            <Route path="/lululemon" component={lululemon} />
                            <Route path="/Sweeper" component={sweeper} />
                            <Route path="/aetna" component={aetna} />

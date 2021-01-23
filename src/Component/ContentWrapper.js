@@ -48,7 +48,7 @@ class ContentWrapper extends React.Component {
                            <Route path="/resume" component={Resume} />
                            <Route path="/johnson" component={johnsonjohnson} />
                            <Route path="/lululemon" component={lululemon} />
-                           <Route path="/Sweeper" component={sweeper} />
+                           <Route path="/sweepr" component={sweeper} />
                            <Route path="/aetna" component={aetna} />
                            <Route path="/Snapchat" component={Snapchat} />
                            

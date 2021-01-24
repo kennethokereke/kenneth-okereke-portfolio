@@ -24,7 +24,7 @@ class Johnson extends React.Component {
                <div className="sectionContent">
                  <h2>Overview</h2>
                  <p>
-                   Last Summer I worked as a <b>UX Design Intern</b> for eBay’s <b>Design Sytems</b> team. Traditionally eBay has not had a cohesive
+                   Last Summer I worked as a <b>UX Design Intern</b> for Johnson & Johnson <b>Design Systems</b> team. Traditionally Johnson & Johnson has not had a cohesive
                    design language. Our team was responsible for creating a fully
                    components-based design system and, in the process, a fresh new design
                    language. I created 2 different patterns for this team: Empty States
@@ -47,7 +47,7 @@ class Johnson extends React.Component {
                    </p>
                  </div>
                  <p>
-                   I spent a little over a week combing through both of ebay’s mobile
+                   I spent a little over a week combing through both of Johnson & Johnson mobile
                    apps and the mobile website, collecting screenshots, and talking to
                    designers in every design team that I could think of that may get
                    effected/benefit from my work on the filtering pattern. I came out of
@@ -69,6 +69,7 @@ class Johnson extends React.Component {
                    findings. I presented my research to a couple different stakeholders
                    using the slide deck below:
                  </p>
+                 {/* the deck below */}
                  <a
                    id="dlButton"
                    href="https://docs.google.com/presentation/d/1XJZuMjVv4DdViZdE-ye7nTdZLT1YTYIO6qy0q1ZyRFA/edit?usp=sharing"
@@ -114,6 +115,7 @@ class Johnson extends React.Component {
                      <img src={badIcon} />
                    </div>
                  </div>
+                 {/* Have a design system made  */}
                  <p>
                    From there I broke down the pill filtering into specific design parts:
                    placement, secondary buttons, highlighted filters, bottom overlay
@@ -126,7 +128,7 @@ class Johnson extends React.Component {
                    for each part of the UI. I tried to compile a list of pros and cons
                    for each of these options and get really specific with my analysis.
                    After getting feedback from my team and tweaking my analysis, I again
-                   went around to designers from different stakeholder teams across eBay
+                   went around to designers from different stakeholder teams across Johnson & Johnson
                    to get their opinion on things. This is the point where I made it a
                    point to get a lot of feedback from the accessibilty team and
                    developers on feasability and engineering constraints.

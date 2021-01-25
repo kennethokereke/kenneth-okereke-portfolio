@@ -54,9 +54,7 @@
       display: flex;
 }
 .horizGallery  > div img {
-         height: 486px;
-         box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.07);
-         margin-right: 35px;
+        
          cursor: pointer;
       }
       .horizGallery  > div img:nth-child(1) {

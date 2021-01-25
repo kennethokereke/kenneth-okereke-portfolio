@@ -22,6 +22,7 @@ import AetnaSketch from '../Images/Aetna/aetnasketch.jpg'
 import AetnaFlow from '../Images/Aetna/aetna-flow.jpg'
 import CoraNotification from '../Images/Aetna/Cora_Notification.png'
 import AetnaNotification from '../Images/Aetna/aetna-notification.png'
+import Aetnafinish from '../Images/Aetna/Aetna-Health.png'
 
 import '../stylesheet/aetna.css';
 
@@ -292,7 +293,7 @@ class Aetna extends Component{
                                </ul>
                                <p>Notification design:</p>
 
-                               <img src={CoraNotification}/>
+                               <img className="images" src={CoraNotification}/>
 
                               <p>Next Step:</p>
                               <ul>
@@ -311,9 +312,9 @@ class Aetna extends Component{
                                  <br/>
                                  <li>Intrigue user to learn more</li>
                                </ul>
+                               <p>Notification design:</p>
 
-
-                               <img src={AetnaNotification}/>
+                               <img className="images" src={AetnaNotification}/>
 
                               <p>Next Step:</p>
                               <ul>
@@ -325,6 +326,37 @@ class Aetna extends Component{
 
                            </div>
 
+                           <h4>Completing the User Flow</h4>
+                           <p>
+                           The pop-up has much more flexibility than the notification for actually 
+                           designing a user interface. Based on the Aetna Health design standards, 
+                           these pop-ups have a large image covering the top portion of the screen, 
+                           followed by a few bullet points and a large call-to-action. I followed 
+                           this design because it helps the team meet our goals - the large visual 
+                           is appealing and makes it easy to display information in a quick, easily-readable way.
+                           </p>
+                           <p>
+                           The pop-up has much more flexibility than the notification for
+                            actually designing a user interface. Based on the Aetna Health design 
+                            standards, these pop-ups have a large image covering the top portion
+                             of the screen, followed by a few bullet points and a large call-to-action.
+                              I followed this design because it helps the team meet our goals
+                               - the large visual is appealing and makes it easy to display
+                                information in a quick, easily-readable way.
+                           </p>
+
+                           <p>
+                           For either user flow, the article was out of my hands. 
+                           The copy team is in charge of producing this information, 
+                           so I simply designed the user interface for each of them. 
+                           The information is expected to be short and succinct with
+                            more resources available. I still wanted users to have a 
+                            quick call-to-action, so the information and resources are 
+                            split between two different containers.
+                           </p>
+
+                           <img src={ Aetnafinish}/>
+
 
                       
                        
@@ -333,60 +365,12 @@ class Aetna extends Component{
                </div>
 
 
-               <div className="horizGallery">
-                  {/* <SRLWrapper>
-                     <img src={old} />
-                    <img src={newJ} />
-                    <img src={nbtoolbar} />
-                    <img src={top_nav} />
-                    <img src={files} />
-                    <img src={image} />
-                    <img src={terminal} />
-                 </SRLWrapper> */}
+               
                </div>
              </div>
-             <div className="section">
-               <div className="sectionContent">
-                  <h2>Brand Guidelines</h2>
-                  <h4>The Problem</h4>
-                  <p>
-                    The project was suffering from a lack of consistent brand messaging.
-                    Everytime a Jupyter developer needed to create Jupyter branded content they had no clue where to get design assets.
-                    This resulted in dozens of wierd logos for different products, random color choices, and overall unproffesional branding.
-                  </p>
-                  <h4>Our Solution</h4>
-                  <p>
-                    First we created a new version of the logo that consolidated the best parts of all the logos in circulation. Then we created the brand book below that lays out rules for the entire project on how to use the brand and logo in an official and beautiful document. Finally, I went through all our projects assets and fixed violations of these guidelines across all of Jupyter's products.
-                  </p>
-                  {/* <object data={brandGuide} type="application/pdf" width="100%" height="460px" internalinstanceid="3" title="">
-                      <p id="none"></p>
-                  </object> */}
-               </div>
-             </div>
-             <div className="section">
-               <div className="sectionContent">
-                  <h2>Navbar</h2>
-                  <h4>The Project</h4>
-                  <p> Redesign the navbar to the project's website at <a href="www.jupyter.org">www.jupyter.org</a> </p>
-                  <h4>Our Process</h4>
-                  <ol>
-                    <li> Gather info from Google Analytics  to learn what pages were important and which ones were getting ignored</li>
-                    <li> Talk to community  to understand which pages were important to them</li>
-                    <li> Organize data  and  create options  in excel</li>
-                    <li> Pick 3 favorite options </li>
-                    <li> Create high-fidelity prototypes  using sketch and invision</li>
-                    <li> Usertest  favorite options</li>
-                    <li> Refine  design</li>
-                    <li> Usertest  new design</li>
-                    <li> Implement  design</li>
-                  </ol>
-                  <div id="navbarImg">
-                    {/* <img src={navbars} /> */}
-                  </div>
-               </div>
-             </div>
+          
             </div>
-         </div>
+        
       );
    }
 }

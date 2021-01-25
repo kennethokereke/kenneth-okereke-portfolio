@@ -1,117 +1,143 @@
-.uber .innerWrapper h1 {
-        color: #1D3839;
-       }
-       .uber .innerWrapper  h4 {
-        color: #1D3839;
-       }
-       .uber .innerWrapper  .horizGallery {
-        background-color: #f7fafb;
-       }
-       .uber .innerWrapper  #step4 {
-        justify-content: center;
-       }
-       .uber .innerWrapper  #uberFooter {
-        background-color: #F2F3F3;
+.jupyter {
+  overflow-x: hidden;
+}
+.jupyter  .innerWrapper .section {
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .jupyter .section:nth-child(2n+1) {
+        background-color: #f8f8f8;
+      }
+
+      .jupyter .sectionContent {
+        padding: 52px 150px 68px 150px;
+        margin: auto;
+        max-width: 900px;
+      }
+     
+
+      .container-right {
         display: flex;
-        border-top: solid 2px #e6e6e6;
-       }
-       .uber .innerWrapper  #uberFooter > div {
-          display: flex;
-          align-items: center;
-          padding: 40px 120px;
-          overflow-x: auto;
-       }
-       .uber .innerWrapper  * {
-            display: flex;
-            white-space: nowrap;
-          }
-          .uber .innerWrapper h3 {
-            margin-right: 10px;
-          }
-          .uber .innerWrapper a {
-            margin-left: 24px;
-            padding: 16px 28px;
-            color: #fff;
-            border-radius: 100px;
-            transition: all 0.25s;
-            box-shadow: 0px 6px 0px #ffffff00;
-          }
-          .uber .innerWrapper a:hover {
-            transform: translateY(-6px);
-            cursor: pointer;
-          }
-          .uber .innerWrapper a:active {
-            transform: translateY(0px);
-            cursor: pointer;
-          }
-          .uber .innerWrapper #principleUber {
-            background-color: #00d1e8;
-          }
-          .uber .innerWrapper #principleUber:hover {
-            box-shadow: 0px 6px 26px #00d1e875;
-          }
-          .uber .innerWrapper #macUber {
-            background-color: #654BDB;
-          }
-          .uber .innerWrapper #macUber:hover {
-            box-shadow: 0px 6px 26px #654BDB75;
-          }
-          .uber .innerWrapper #movieUber {
-            background-color: #F86D6D;
-            margin-right: 55px;
-          }
-          .uber .innerWrapper #movieUber:hover {
-            box-shadow: 0px 6px 26px #F86D6D75;
-          }
-        
+        justify-content: space-evenly;
+      }
+
+      .container-change {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .statistics {
+        display: flex;
+      }
+      .container-top {
+        display: flex;
+        justify-content: space-between;
        
-          .uber .innerWrapper .sectionContent img {
-          width: calc(100%);
-          margin-bottom: 40px;
-        }
-        .uber .innerWrapper .highlightedText {
-          background-color: #F1F5F7;
-          padding: 20px 32px;
-          width: calc(100% + 66px);
-          transform: translateX(-32px);
-          border-radius: 6px;
-          color: #0A2F3C;
-          font-style: italic;
-          margin: 0 0 12px 0;
-          box-sizing: border-box;
-        }
- 
-        .uber .innerWrapper #dragDown .col:nth-child(1) {
-            padding-right: 75px;
-          }
-          .uber .innerWrapper #oldUber {
-            width: 260px;
-            margin-top: 40px;
-          }
+      }
+      .innerWrapper .graph {
+        width: 100%;
+      }
+      .info-detail {
+        display: flex;
+        margin-top: 50px;
+      }
+
+      .screening {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .Applicants {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      .innerWrapper .graphpic {
+        width: 100%;
         
- 
-          .uber .innerWrapper #uberPrototype {
-          max-height: 696px;
-          width: 100%;
-          margin: 10px 0;
-        }
-        .uber .innerWrapper #uberPrototypePara {
-          margin-bottom: 50px;
-        }
-       
+      }
+
+      .multiple-flow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .innerWrapper .aetna-flow {
+        width: 80%;
+        
+      }
+      .flow {
+        padding-left: 55px;
+      }
+
+      .flexme {
+        display: flex;
+        justify-content: space-between;
+      }
+
+    
+
+     
     
 
 
 
+      .jupyter h1 {
+        color: #f37727;
+        padding: 24px 0 16px 0;
+      }
+      .jupyter h2 {
+        line-height: 1.5;
+        color: #f37727;
+      }
+      .jupyter  h3 {
+        line-height: 2;
+      }
+      .jupyter p {
+        line-height: 26px;;
+      }
+      .jupyter  b {
+        font-weight: 500;
+      }
+      .jupyter  ol {
+        margin: 5px 0 0 0;
+        padding-left: 17px;
+      }
+      .jupyter li {
+        line-height: 1.5;
+      }
+      .jupyter object {
+        margin-top: 20px;
+      }
 
-    
+      .jupyter .sectionContent  > img {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      #navbarImg {
+        background-color: #f3f3f3;
+        padding: 5px;
+        margin: 20px 0;
+        
+      }
+
+      #navbarImg  img {
+        width: 100%;
+      }
+
+      #jupyterLab {
+         padding-bottom: 20px;
+      }
+
+      .horizGallery  > div {
+            padding: 0 120px 68px 0;
+         }
 
 
-    @media screen and (max-width: 922px) {
-     #wrapper .innerWrapper .sectionContent #uberPrototype {
-       height: initial;
-       margin: 0;
-     }
-   }
- 
- 
+      
+  

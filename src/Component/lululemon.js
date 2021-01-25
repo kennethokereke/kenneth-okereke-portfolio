@@ -19,6 +19,18 @@ import Lululemoncover from '../Images/lululemon/lululemoncover.png'
 import Lululmoncompetitive from '../Images/lululemon/lululemoncompetitive.png'
 import LululemonComp from '../Images/lululemon/lululemoncomp.png'
 import LulelemonDefine from '../Images/lululemon/lululemondefine.png'
+import LululemonPersona1 from '../Images/lululemon/lululemonpersona1.png'
+import Lululemonmaps from '../Images/lululemon/lululemonmaps.png'
+import LululemonExperience from '../Images/lululemon/lululemonexperience.png'
+import LululemonDesign from '../Images/lululemon/lululemondesign.png'
+import LululemonSketch from '../Images/lululemon/lululemonsketch.png'
+import LululemonDelivery from '../Images/lululemon/lululemondelivery.png'
+import LululemonSketch2 from '../Images/lululemon/lululemonsketch2.png'
+import LululemonWireframe from '../Images/lululemon/lululemonwireframe.png'
+import LululemonMidWireframe from '../Images/lululemon/lululemonmidwireframe.png'
+import LululemonMidWireframe2 from '../Images/lululemon/lululemonmidwireframe2.png'
+import LululemonDesignWireframe from '../Images/lululemon/lululemondesignwireframe.png'
+import LululemonFinalDesign from '../Images/lululemon/lululemonfinaldesign.png'
 // import brandGuide from "../files/jupyter_brand_guide.pdf";
 
 import '../stylesheet/Lululemon.css';
@@ -225,8 +237,209 @@ class Lululemon extends Component {
                                       </p>
 
                                       <h4>The Persona</h4>
+                                      <img src={LululemonPersona1} />
 
-                                      
+                                      <ul>
+                                        <li>Her main want is to practice meditation so she can quiet her
+                                           mind before yoga and make the most out of her class.</li>
+                                           <li>She’s motivated by incentives and goals.</li>
+                                           <li>She’s used meditation apps before, but she doesn’t stick to a routine.</li>
+                                      </ul>
+
+                                      <p>
+                                      We created an empathy map to distil and categorise our knowledge of Kimberley 
+                                      into one place and prioritise her needs. Along with the main points above, 
+                                      it brought a few additional considerations to the fore.
+                                      </p>
+
+                                      <img src={Lululemonmaps} />
+
+                                      <ul>
+                                        <li>Lulu have free in-store yoga classes but she never knows when they are</li>
+                                        <li>Customising a meditation and being able to set goals would motivate her</li>
+                                        <li>She likes to check which instructor will be leading the class and expects expertise</li>
+                                      </ul>
+
+                                      <p>But what does an average day look like for Kimberley? Where could we try to help her?</p>
+
+                                      <p>We put together an experience map to illustrate Kimberley’s typical experience from 
+                                        finishing work to attending a yoga class.</p>
+
+                                        <img src={LululemonExperience} />
+
+                                        <p>The black line indicates her current emotional experience — from booking the class when 
+                                          she’s on a high, thereafter it’s downhill all the way. She ends up nearly as miserable as 
+                                          when she started. The green line shows how Kimberley’s experience could be improved by 
+                                          using our mindfulness app so that she finishes her yoga on a high.</p>
+
+                                          <p>
+                                          Even the thought that the next class might be expensive has been mitigated
+                                           by the good experience she’s just had — and on top of that as you’ll later 
+                                           see, our app has a functionality to help her find the next freebie!
+                                          </p>
+
+                                          <blockquote>
+                                            <p>
+                                            "Create a mindfulness app that allows Kimberley to customise her meditations, 
+                                            track her progress and get motivated to form a routine — whilst maintaining 
+                                            a connection with the Lululemon brand."
+                                            </p>
+                                          </blockquote>
+
+
+                                          <p>
+                                          This challenge considered both our persona, but also the brief and findings from 
+                                          the user interviews and competitive research. It was time to move onto the 
+                                          ‘design’ phase of the process!
+                                          </p>
+
+                                          <img src={LululemonDesign} />
+
+                                          <h4>Design Studio</h4>
+
+                                          <p>Going into the Design Studio, our aim was to build something that:</p>
+
+                                          <ul>
+                                            <li>allowed customisable meditations</li>
+                                            <li>motivated and potentially incentivised users to build a routine</li>
+                                            <li>allowed users to book Lululemon in-store events</li>
+                                          </ul>
+
+                                          <p>The design studio was extremely useful for our team, allowing us to get 
+                                            every idea we had down on paper, and then focus the vision from there.</p>
+
+                                            <img src={LululemonSketch} />
+
+                                            <p>We used dot voting to refine the ideas — a few key ones arose:</p>
+
+                                            <ul>
+                                              <li>Theming the Meditations…and Expert Talks? We all separated meditations 
+                                                into sections relating to specific themes so users could easily navigate. 
+                                                To call on the expertise that Kimberley wanted, a few of us included a 
+                                                section of ‘expert talks’ — Lululemon thought leaders in the wellness 
+                                                space giving talks around specific subjects — which was a feature we 
+                                                carried through into the final prototype.</li>
+                                                <br />
+
+                                                <li>
+                                                Streak Incentive To tackle the motivation factor, a lot of us explored
+                                                 incentive schemes, and how this could tie in with the Lululemon brand.
+                                                  A key idea that was taken from the design studio, was the idea of winning
+                                                   lemons when you completed a meditation to form daily streaks. 
+                                                   These were depicted on a lemon tree which represented your progress.
+                                                    I had the idea to incentivise this further with rewarding users with 
+                                                    a free Lululemon in-store class if they completed 10 meditations over 
+                                                    10 days — something that would support the business goal of wanting 
+                                                    people to attend their free in-store classes, as it’s a big money maker for them!
+                                                </li>
+                                            </ul>
+                                            <img src={LululemonDelivery} />
+
+                                            <p>We proceeded to develop a paper prototype that illustrated the 
+                                              features designed in the Design Studio, and started testing with users.</p>
+
+                                              <h4>The task</h4>
+
+                                              <p>
+                                              Our persona Kimberley is finishing work and on her commute to attend her yoga class — she 
+                                              can’t quiet her mind and forget the events of a stressful day at work. We set users the
+                                               task of evaluating their mood, customising a meditation for their 20 minute commute 
+                                               and viewing their progress stats.
+                                              </p>
+
+                                              <img src={LululemonSketch2} />
+
+                                              <h4>
+                                              Guerilla Testing!
+                                              </h4>
+
+                                              <p>
+                                              One of the ideas that divided the team was user’s earning lemons when
+                                               they complete a meditation and their meditation stats being visually
+                                                represented through a lemon tree.
+                                              </p>
+
+                                              <p>
+                                              Our solution was to conduct a guerilla test with six unbiased users at Public Gyms who were not familiar 
+                                              with the app. Five out of six not only liked the idea but intuitively understood this idea of a 
+                                              tree representing their mental health which was continuously ‘growing’ and liked 
+                                              the gamification of earning lemons, so we moved forward with it. It was quick and 
+                                              allowed us to make a decision based on user feedback, not by our own personal hypotheses about it.
+                                              </p>
+
+                                              <h4>Mid-Fidelity Wireframes</h4>
+
+                                              <p>Based on our feedback on the paper prototype, we could move on
+                                                 to developing our mid-fidelity prototype.</p>
+
+                                                 <img src={LululemonWireframe} />
+
+                                                 <p>
+                                                 To test our mid-fidelity prototype, I led a user shuffle with a total of eight users
+                                                  with each team member testing with two users. I synthesised the findings in a
+                                                   spreadsheet so we could easily collate our findings and view common themes
+                                                    relating to each screen in the user flow.
+                                                 </p>
+
+                                                 <img src={ LululemonMidWireframe}/>
+
+                                                 <h4>Key Iterations</h4>
+                                                 <p>A common pain-point was that people felt three emotions were limiting,
+                                                    so we added a greater variety. Users also commented that they might
+                                                     be feeling a combination of a few, so in the final prototype I added 
+                                                     ‘plus’ icons so it was clear they could select more than one.</p>
+
+                                                     <img src ={LululemonMidWireframe2}/>
+
+                                                     <p>
+                                                     Users really liked the lemon tree concept representing their progress 
+                                                     and being rewarded for each meditation, but there was too much going on on 
+                                                     the screen. People weren’t clear that the tabs pertained to ‘weekly’ 
+                                                     ‘monthly’ and ‘all time’ statistics, and found this confusing. 
+                                                     We removed these and just featured your ‘total’ stats, and added a 
+                                                     ‘View History’ button for users to view historical data.
+                                                     </p>
+
+                                                     <img src ={LululemonDesignWireframe}/>
+
+                                                     <blockquote>
+                                                       <p>
+                                                       “I like the lemon tree — it’s organic, and like your mental health, 
+                                                       there’s no end goal. It continues to grow.”
+
+                                                       </p>
+                                                     </blockquote>
+
+                                                     <h4>Interactive Prototype</h4>
+                                                     <p>You can view the final, high fidelity clickable prototype on Invision <a href="https://projects.invisionapp.com/share/EVXCRMJR4GW#/screens">here!</a></p>
+
+                                                     <img src ={LululemonFinalDesign}/>
+
+
+                                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,121 +1,392 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { SRLWrapper } from "simple-react-lightbox";
 
 import TopBanner from './TopBanner';
 
-// import uber1 from "../images/uber/uber1.mp4";
-// import option1 from "../images/uber/option1.png";
-// import option2 from "../images/uber/option2.png";
-// import option3 from "../images/uber/option3.png";
-// import option4 from "../images/uber/option4.png";
-// import uberProtoSmall from "../images/uber/UberPrototypeSmall.mp4";
-// import uberPrinciple from "../files/uber/uberPrinciple.prd";
-// import uberMac from "../files/uber/uberMac.zip";
-// import uberVideo from "../files/uber/uberVideo.mov";
-// import uberFlowDiagram from "../images/uber/uberFlowDiagram.png";
+// import JupyterTeam from "../images/jupyter/jupyterTeam.jpg";
+// import old from "../images/jupyter/old.png";
+// import newJ from "../images/jupyter/new.png";
+// import nbtoolbar from "../images/jupyter/nbtoolbar.png";
+// import top_nav from "../images/jupyter/top_navbar.png";
+// import files from "../images/jupyter/files.png";
+// import image from "../images/jupyter/image.png";
+// import terminal from "../images/jupyter/terminal.png";
+// import navbars from "../images/jupyter/navbars.png";
 import AetnaHeader from '../Images/Aetna/aetna-logo.svg';
+// import brandGuide from "../files/jupyter_brand_guide.pdf";
+import AetnaIntro from '../Images/Aetna/AetnaIcon.svg'
+import AetnaData from '../Images/Aetna/aetna-data.png'
+import AetnaMap from '../Images/Aetna/aetna-BrainMap.jpg'
+import AetnaGraph from '../Images/Aetna/aetna-graph.png'
+import AetnaSketch from '../Images/Aetna/aetnasketch.jpg'
+import AetnaFlow from '../Images/Aetna/aetna-flow.jpg'
+import CoraNotification from '../Images/Aetna/Cora_Notification.png'
+import AetnaNotification from '../Images/Aetna/aetna-notification.png'
 
 import '../stylesheet/aetna.css';
 
-class Aetna extends React.Component {
+class Aetna extends Component{
    render() {
       return (
-         <div className="uber">
+         <div className="jupyter">
             <div className="innerWrapper">
-             <TopBanner image={AetnaHeader} bgColor="#0A2F3C" arrowColor="#e8feff"/>
-             <div className="section" id="main">
+             <TopBanner image={AetnaHeader} bgColor="#FF9445" arrowColor="#fff4ec"/>
+             <div className="section">
                <div className="sectionContent">
-                  <h1>Uber: Navigating with the Map</h1>
-                  <p className="highlightedText">My friend Kevin calls me. “What are you up to right now? You should come over!”. I agree, pull out my phone, and open up the Uber app. <b>Ugh, whats his address again</b>, I thought? Ive been there a thousand times but I just can’t remember his address.</p>
-                  <h4 className="galleryHeader">My Idea</h4>
-                  <p>Sometimes you know where you want to go but you dont know the address. My solution to this problem was to be able to just pick a point on the map where you want to go and be able to get an Uber there.</p>
-                  <h2>Problems with Current Design</h2>
-                  <h4 className="galleryHeader">Usertesting</h4>
+         
+             <h3>Aetna Health - Colorectal Cancer application</h3>
+                  <img style={{width: 500 }} src={AetnaIntro} />
+
+                <p>
+                Colorectal cancer is the second leading cause of deaths from cancer in the US. 
+                How can we use Aetna's resources to help increase screenings?
+                </p>
+
+                
+                <div className="container-top">
+                  <div>
+                  <h4>My Role</h4>
                   <p>
-                    The first thing I did when takling this issue was run usertests on the current app. Usertesting alows you to get a sense of what user’s insticts are and what they intuitivley want to do when presented with a task.
-                    <br /><br />
-                    All I did was ask users the following prompt:<br />
-                    “Suppose you forgot the address to your own house. Try to navigate there using Uber.”
-                    <br /><br />
-                    I usertested 5 people and here is what they did:<br />
-                    - Only 1 person was able to find the current way to do this<br />
-                    - 4 out of the 5 people's first instict was to tap on the map<br />
-                    - Those 4 people's second instict was to dig through the menu system.
+                    UI design Intern
                   </p>
-                  <div className="row" id="dragDown">
-                    <div className="col">
-                      <h4 className="galleryHeader">Discoverability</h4>
-                      <p>
-                        Going into this redesign I was under the impression that you couldn’t uber to a point on the map. This is because the current method to do this is super hidden.
-                        <br /><br />
-                        First you click the search bar, then you are provided with a normal looking search page. You are supposed to drag down to reveal a map where you can then place a pin for your destination.
-                        <br /><br />
-                        During usertesting no one was able to find this feature.
-                      </p>
-                      <h4 className="galleryHeader">Too Many Steps</h4>
-                      <p>
-                        The other main issue with the current approach was how many steps it took to do this simple task.
-                        <br /><br />
-                        Assuming the user knows how to use this feature it would take a click, a swipe down, a drag, and then another click just to pick a spot on the map.
-                      </p>
-                    </div>
-                    <div className="col">
-                      {/* <video id="oldUber" autoPlay loop playsInline muted>
-                        <source src={uber1} type="video/mp4" />
-                        Your browser does not support videos :(
-                      </video> */}
-                    </div>
+
                   </div>
-                  <h2>Designing a New Interaction</h2>
-                  <p>Through usertesting, I realized that a most people’s instict was to just try clicking a spot on the map to navigate there. This made a ton of sense to me and became the premise of my redesign.</p>
-                  <h4 className="galleryHeader">Step 1: “Wireframe” basic flow</h4>
-                  <p>Normally I would NEVER wireframe the entire flow this early. However, after usertesting, this basic flow felt very obvious and there was no point in putting this off.</p>
-                  {/* <img src={uberFlowDiagram} /> */}
-                  <h4 className="galleryHeader">Step 2: Explore Options</h4>
-                  <p>Because I didnt want to redesign the entire app, most of the design work happened on the second screen. I created a bunch of low fidelity mocks and analyzed the pros and cons of each. These were the designs that stood out:</p>
+                
+                   <div>
+                   <h4>Timeline</h4>
+                  <p>June 2015 - August 2015</p>
+
+                   </div>
+                  <div>
+                   <h4>Team</h4>
+                  <ol>
+                    <li>5 UI designers</li>
+                    <li>3 Copy writers</li>
+                    <li>5 UX designers</li>
+                    <li>3 Accessibility testers</li>
+                  </ol>
+
+                   </div>
+                 <div>
+                 <h4>Tools</h4>
+                  <ol>
+                    <li>Sketch</li>
+                    <li>Invision</li>
+                    <li>Github</li>
+                  </ol>
+
+                 </div>
+                 </div>
+                  
+
+              
+                  
+                 
+                
+
                </div>
+             </div>
+             {/* <img src={JupyterTeam} /> */}
+             <div className="section">
+               <div className="sectionContent" id="jupyterLab">
+               
+                  <h4>The Overview</h4>
+                  <p>
+                  I joined Aetna Digital's design team as a UI design intern as the team worked to add new
+                   features to the Aetna Health application. It was an incredible opportunity — taking
+                    the complexities of health insurance and creating a user-friendly application is no 
+                    easy task. The design team referred to itself as team MISL: Make Insurance Suck Less.
+                  </p>
+
+                  <p>
+                  This case study focuses on the intern capstone project. I worked with five interns 
+                  from various other fields; we had interns from development, business, and marketing
+                   represented. We were tasked with designing a solution to some sort of health equity problem.
+                  </p>
+
+                  <h4>Understanding the Problem</h4>
+                  <p>A team member had a family member die from colorectal cancer, so we decided to look 
+                    into the problems affecting this cancer. To learn more, we began researching some 
+                    statistics. (source)</p>
+
+                    <div className="statistics">
+                      <div>
+                        <h3>50+</h3>
+                        <p>Average Age when Diagnosed</p>
+                      </div>
+
+                      <div>
+                        <h3>2nd</h3>
+                        <p>Leading Cause of Cancer Death</p>
+                      </div>
+
+                      <div>
+                        <h3>65%</h3>
+                        <p>Five-Year Survival Rate</p>
+                      </div>
+
+                      <div>
+                        <h3>90%</h3>
+                        <p>Five-Year Survival Rate, with early screenings</p>
+                      </div>
+
+
+
+
+                    </div>
+
+                    <div className="info-detail">
+                      <div>
+                        <h4>Diagnosis & Mortality by Race</h4>
+                        <p>Diving deeper into our research, we also found that colorectal cancer
+                           disproponately affects men and women of color when compared with the non-hispanic 
+                           white population. Incidence rates are 20% higher for black populations, and 
+                           mortality rates are 40% higher for black communities.</p>
+                           <p>
+                           Research suggests these differences largely reflect differences in socioeconomic
+                            status and education levels. This largely stems from the prevalence of risk
+                             factors in these communities (smoking, obesity, etc.) and the lack of screenings.
+                           </p>
+                      </div>
+
+                      <div>
+                        <h4>Colorectal Cancer Rates for Combined Sexes</h4>
+                        <img className="graph" src={AetnaData}/>
+                      </div>
+
+                    </div>
+
+                    <h4>We're not going to fix socioeconomic disparities with an app.</h4>
+                    <p>Solving the root causes of socioeconomic disparities via a summer internship
+                       and iOS application is unlikely. This presented a problem — if our goal is 
+                       to find an equitable solution to a health disparity facing our nation, do 
+                       we move forward with our research, or go back to the drawing board to find 
+                       another problem. To be entirely honest, we were short for time at this point, 
+                       so we chose to move forward and research why people from these communities are 
+                       less likely to get colorectal cancer screenings. We learned the following.</p>
+
+                       <div className="screening">
+                       <div>
+                       <h4>Screening Obstacles</h4>
+                       <ul>
+                         <li>Lack of transportation to screening centers</li>
+                         <br/>
+                         <li>Cost of colonoscopy</li>
+                         <br/>
+                         <li>Overall, stigmas surrounding a screening</li>
+                       </ul>
+
+                       </div>
+                      
+                        <div>
+                        <h4>Screening Stigmas</h4>
+                       <ul>
+                         <li>The test is difficult, painful, or embarrassing</li>
+                         <br/>
+                         <li>Screenings are only necessary if you see signs or symptoms</li>
+                         <br/>
+                         <li>Screenings are expensive & time consuming</li>
+                         <br/>
+                         <li>A lack of family history makes screenings unnecessary</li>
+                       </ul>
+
+                        </div>
+
+                       </div>
+
+                       <h4>Wrapping our heads around the data</h4>
+                       <p>This is a lot of data, and a very complex problem. 
+                         To brainstorm solutions, we decided to use a good, 'ol-fashioned 
+                         whiteboard so we could get ideas and thoughts out of our minds. 
+                         Here's a picture of our brain map, cleaned up a little bit for readability:</p>
+                         
+                         <img src={AetnaMap} />
+
+                         <div className="Applicants">
+                           <div>
+                             <h4>Our Plan</h4>
+                             <p>We devised a plan that we think helps meet our goal 
+                               while using Aetna's existing resources, therefore helping
+                                Aetna as a whole. It consists of 2 parts.</p>
+                           
+                           
+                           
+                             <h4>(1) Increasing Testing Availability</h4>
+                             <p>Our goal is to be equitable for those who would not normally
+                                have access to testing. By utilizing resources such as 
+                                take-home tests or Aetna'a Cora mobile clinic, we 
+                                can increase testing while tackling the major problems 
+                                of transportation and cost.</p>
+                             
+
+                           
+                             <h4>(2) Spreading Awareness</h4>
+                             <p>Many of the stigmas surrounding colorectal cancer screenings
+                                stem from misinformation being passed by word of mouth. 
+                                By utilizing the Aetna Health application and a targeted 
+                                ad campaign, we can increase awareness for the types of 
+                                screenings available while displaying the importance of 
+                                being screened.</p>
+
+                           </div>
+
+                           <div>
+                             <img className="graphpic" src={AetnaGraph} />
+                           </div>
+
+
+                         </div>
+
+                         <h4>Utilizing Aetna's design system to create a user flow</h4>
+                         <p>I was tasked with creating a user flow to increase awareness through the 
+                           Aetna Health application. Luckily, the design team had already solidified 
+                           a user flow they called 'Next Best Action', or NBA.</p>
+                           <p>
+                           NBA flows are designed to inform users of actions they can take 
+                           to improve their health. It generally starts with a notification
+                            that opens a pop-up in the app. This pop-up shares general 
+                            information with the option of viewing more, or completing a
+                             designated action.
+                           </p>
+
+                           <img src={AetnaSketch}/>
+
+                           <div className="multiple-flow">
+                            <div className="body-text"> 
+                              <h4>Creating Multiple Flows</h4>
+                              <p>To align with our two goals, we wanted two flows. 
+                                Each requires a user to be 50+ years old with no record of 
+                                colorectal cancer screenings in the previous 7 years, or a 
+                                relative who fits that criteria.
+                                <br/>
+                                <br/>
+
+                                
+                                If the Cora truck has a planned stop within 10 miles of this individual, 
+                                they'll be notified with information related to the mobile clinic.
+                                <br/>
+                                <br/>
+                                
+                                Otherwise, the user will receive information and statistics
+                                 regarding the importance of screenings.
+                                </p>
+
+                            </div>
+
+                            <div style={{display: 'flex', justifyContent: 'flex-end'}}>
+                              <img className="aetna-flow" src={AetnaFlow}/>
+
+                            </div>
+                           </div>
+
+                           <div className="flexme">
+                             <div>
+                               <h4>Cora Truck is Near Notification</h4>
+                               <p>Goals:</p>
+                               <ul>
+                                 <li>Display time, date, and location of Cora stop</li>
+                                 <br/>
+                                 <li>Emphasize importance of screening</li>
+                                 <br/>
+                                 <li>Intrigue user to learn more</li>
+                               </ul>
+                               <p>Notification design:</p>
+
+                               <img src={CoraNotification}/>
+
+                              <p>Next Step:</p>
+                              <ul>
+                                <li>Display an article that tackles stigmas and persuades the
+                                   user to schedule an appointment with their medical center</li>
+                              </ul>
+                             </div>
+
+                             <div>
+                               <h4>General Information Notification</h4>
+                               <p>Goals:</p>
+                               <ul>
+                                 <li>Display numerous options for screenings</li>
+                                 <br/>
+                                 <li>Emphasize importance of screening</li>
+                                 <br/>
+                                 <li>Intrigue user to learn more</li>
+                               </ul>
+
+
+                               <img src={AetnaNotification}/>
+
+                              <p>Next Step:</p>
+                              <ul>
+                                <li>Display a pop-up with a map and further information and 
+                                  ability to add the event to a calendar</li>
+                              </ul>
+                             </div>
+
+
+                           </div>
+
+
+                      
+                       
+
+
+               </div>
+
+
                <div className="horizGallery">
                   {/* <SRLWrapper>
-                    <img src={option1} />
-                    <img src={option2} />
-                    <img src={option3} />
-                    <img src={option4} />
+                     <img src={old} />
+                    <img src={newJ} />
+                    <img src={nbtoolbar} />
+                    <img src={top_nav} />
+                    <img src={files} />
+                    <img src={image} />
+                    <img src={terminal} />
                  </SRLWrapper> */}
                </div>
+             </div>
+             <div className="section">
                <div className="sectionContent">
-                  <div className="row">
-                    <div className="col">
-                      <p>I ended up picking option 3 for a couple reasons. The main reason was that it was able to hide all the elements that didnt serve a purpose when you are scrolling around the map. It kept the question of “Where to?” on the screen and it kept the advertising card while hiding everything else.</p>
-                      <h4 className="galleryHeader">Step 3: High-Fidelity Mockups</h4>
-                      <p>The next step was just to recreate the Uber app in sketch. I remade all the UI elements from scratch and designed all the screens. This step was all about getting the details right.</p>
-                    </div>
-                  </div>
-                  <div className="row">
-                    <div className="col" id="step4">
-                      <h4 className="galleryHeader">Step 4: Create Interactive Prototype with Principle</h4>
-                      <p id="uberPrototypePara">Finally I used principle to create the final prototype. Here is the final product:</p>
-                    </div>
-                    <div className="col">
-                      {/* <video id="uberPrototype" autoPlay loop playsInline muted>
-                        <source src={uberProtoSmall} type="video/mp4" />
-                        Your browser does not support videos :(
-                      </video> */}
-                    </div>
-                  </div>
+                  <h2>Brand Guidelines</h2>
+                  <h4>The Problem</h4>
+                  <p>
+                    The project was suffering from a lack of consistent brand messaging.
+                    Everytime a Jupyter developer needed to create Jupyter branded content they had no clue where to get design assets.
+                    This resulted in dozens of wierd logos for different products, random color choices, and overall unproffesional branding.
+                  </p>
+                  <h4>Our Solution</h4>
+                  <p>
+                    First we created a new version of the logo that consolidated the best parts of all the logos in circulation. Then we created the brand book below that lays out rules for the entire project on how to use the brand and logo in an official and beautiful document. Finally, I went through all our projects assets and fixed violations of these guidelines across all of Jupyter's products.
+                  </p>
+                  {/* <object data={brandGuide} type="application/pdf" width="100%" height="460px" internalinstanceid="3" title="">
+                      <p id="none"></p>
+                  </object> */}
                </div>
-               <div id="uberFooter">
-                  <div className="sectionContent">
-                    <h4>Download Prototype:</h4>
-                    {/* <a id="principleUber" href={uberPrinciple} download>Principle File</a>
-                    <a id="macUber" href={uberMac} download>Mac App</a>
-                    <a id="movieUber" href={uberVideo} download>Video</a> */}
+             </div>
+             <div className="section">
+               <div className="sectionContent">
+                  <h2>Navbar</h2>
+                  <h4>The Project</h4>
+                  <p> Redesign the navbar to the project's website at <a href="www.jupyter.org">www.jupyter.org</a> </p>
+                  <h4>Our Process</h4>
+                  <ol>
+                    <li> Gather info from Google Analytics  to learn what pages were important and which ones were getting ignored</li>
+                    <li> Talk to community  to understand which pages were important to them</li>
+                    <li> Organize data  and  create options  in excel</li>
+                    <li> Pick 3 favorite options </li>
+                    <li> Create high-fidelity prototypes  using sketch and invision</li>
+                    <li> Usertest  favorite options</li>
+                    <li> Refine  design</li>
+                    <li> Usertest  new design</li>
+                    <li> Implement  design</li>
+                  </ol>
+                  <div id="navbarImg">
+                    {/* <img src={navbars} /> */}
                   </div>
                </div>
              </div>
             </div>
          </div>
-
-
       );
    }
 }
